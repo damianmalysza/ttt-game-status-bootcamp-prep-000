@@ -16,7 +16,8 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-
+  WIN_COMBINATIONS.each do |win_combo|
+    puts win_combo
 end
 
 board=["X","X","X"," "," "," "," "," "," "]
