@@ -19,8 +19,6 @@ def won?(board)
 
 end
 
-board=[" "," "," "," "," "," "," "," "," "]
-
-puts board.length
+board=["X","X","X"," "," "," "," "," "," "]
 
 won?(board)
