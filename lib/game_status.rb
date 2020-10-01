@@ -22,3 +22,5 @@ end
 board=[" "," "," "," "," "," "," "," "," "]
 
 puts board.length
+
+won?(board)
