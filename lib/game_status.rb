@@ -16,17 +16,16 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  WIN_COMBINATIONS.each do |win_combo|
-    position_1 = win_combo[0]
-    position_2 = win_combo[1]
-    position_3 = win_combo[2]
-    if board[position_1] == "X" && board[position_2] == "X" && board[position_3] == "X"
-      return win_combo
-    elsif board[position_1] == "O" && board[position_2] == "O" && board[position_3] == "O"
-      return win_combo
-    else
-      return false
+  if( board.all?{|i| i == " "} )
+    false
+  else
+    WIN_COMBINATIONS.each do |combo|
+      if( (board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X") ||
+          (board[combo[0]] == "O" && board[combo[1]] == "O" && board[combo[2]] == "O") )
+        return combo
+      end
     end
+    false
   end
 end
 
