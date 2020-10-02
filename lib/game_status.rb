@@ -16,7 +16,7 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  if (board.all?{|i| i==" " || i = ""})
+  if( board.all?{|i| i == " "} )
     false
   else
     WIN_COMBINATIONS.each do |combo|
@@ -25,6 +25,7 @@ def won?(board)
         return combo
       end
     end
+    false
   end
 end
 
