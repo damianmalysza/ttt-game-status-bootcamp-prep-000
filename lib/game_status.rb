@@ -16,14 +16,8 @@ WIN_COMBINATIONS = [
 ]
 
 def won?(board)
-  if (board.all?{|i| i == " "} )
-    false
-  else
-    WIN_COMBINATIONS.each do |combo|
-      if (board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X") || (board[combo[0]] == "O" && board[combo[1]] == "O" && board[combo[2]] == "O")
-        return combo
-      end
-    end
+  if (board.all?{|i| i==" " || i = ""})
+    return false
 end
 
 
