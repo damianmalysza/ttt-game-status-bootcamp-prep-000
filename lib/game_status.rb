@@ -20,10 +20,8 @@ def won?(board)
     position_1 = win_combo[0]
     position_2 = win_combo[1]
     position_3 = win_combo[2]
-    puts position_1
-    puts position_2
-    puts position_3
-
+    if board[position_1] == "X"
+      return win_combo
   end
 end
 
