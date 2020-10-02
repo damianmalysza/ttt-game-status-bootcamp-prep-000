@@ -20,6 +20,7 @@ def won?(board)
     position_1 = win_combo[0]
     position_2 = win_combo[1]
     puts position_1
+    puts position_2
   end
 end
 
