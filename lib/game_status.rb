@@ -17,6 +17,7 @@ WIN_COMBINATIONS = [
 
 def won?(board)
   if board.all?{|i| i == "" || i == " "}
+    false
 end
 
 board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X"
