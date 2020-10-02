@@ -23,6 +23,7 @@ def won?(board)
       if (board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X")
         return combo
       end
+    end
   end
 end
 
@@ -31,6 +32,6 @@ end
 
 #won?(board)
 
-#def full?(board)
-#  board.all?{|i| i =="X" || i == "O"}
-#end
+def full?(board)
+  board.all?{|i| i =="X" || i == "O"}
+end
