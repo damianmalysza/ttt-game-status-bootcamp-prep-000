@@ -21,7 +21,7 @@ def won?(board)
   end
 end
 
-board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X"
+#board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X"
 #board=["O","O","O"," "," "," "," "," "," "]
 
 #won?(board)
