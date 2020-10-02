@@ -33,7 +33,7 @@ def won?(board)
 end
 
 def full?(board)
-  board.none?{|i| i == "X" || i == "O"}
+  board.all?{|i| i != " " || i != ""}
 end
 
 #board=["O","O","O"," "," "," "," "," "," "]
