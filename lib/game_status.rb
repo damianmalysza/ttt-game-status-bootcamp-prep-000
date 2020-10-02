@@ -32,10 +32,12 @@ def won?(board)
   end
 end
 
-def full?(board)
-  board.all?{|i| i =="X" || i == "O"}
-end
 
 #board=["O","O","O"," "," "," "," "," "," "]
 
 #won?(board)
+
+def full?(board)
+  board.all?{|i| i =="X" || i == "O"}
+end
+
