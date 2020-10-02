@@ -29,6 +29,7 @@ def won?(board)
       elsif board[position_1] == "O" && board[position_2] == "O" && board[position_3] == "O"
         return combo
       end
+    end
 
   end
 end
