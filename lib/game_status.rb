@@ -21,10 +21,10 @@ def won?(board)
     position_2 = win_combo[1]
     position_3 = win_combo[2]
     if board[position_1] == "X" && board[position_2] == "X" && board[position_3] == "X"
-      puts win_combo
+      win_combo
       break
     elsif board[position_1] == "O" && board[position_2] == "O" && board[position_3] == "O"
-      puts win_combo
+      win_combo
       break
     else
       false
@@ -32,6 +32,10 @@ def won?(board)
   end
 end
 
-board=["O","O","O"," "," "," "," "," "," "]
+def full?(board)
+  
+end
 
-won?(board)
+#board=["O","O","O"," "," "," "," "," "," "]
+
+#won?(board)
