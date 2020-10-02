@@ -24,20 +24,13 @@ def won?(board)
       position_2 = combo[1]
       position_3 = combo[2]
 
-      if board[position_1] == "X" && board[position_2] == "X" && board[position_3] == "X"
-        return combo
-      elsif board[position_1] == "O" && board[position_2] == "O" && board[position_3] == "O"
+      if (board[position_1] == "X" && board[position_2] == "X" && board[position_3] == "X") || (board[position_1] == "O" && board[position_2] == "O" && board[position_3] == "O")
         return combo
       end
     end
     false
   end
 end
-
-#board[combo[0]] == "X" && board[combo[1]] == "X" && board[combo[2]] == "X"
-#board=["O","O","O"," "," "," "," "," "," "]
-
-#won?(board)
 
 def full?(board)
   board.all?{|i| i =="X" || i == "O"}
