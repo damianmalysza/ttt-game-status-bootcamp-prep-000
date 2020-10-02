@@ -26,6 +26,6 @@ def won?(board)
   end
 end
 
-board=[" "," "," "," "," "," "," "," "," "]
+board=[" ","X"," "," "," "," "," "," "," "]
 
 won?(board)
