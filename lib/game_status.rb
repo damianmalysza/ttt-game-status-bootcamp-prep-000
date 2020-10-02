@@ -19,7 +19,7 @@ def won?(board)
   WIN_COMBINATIONS.each do |win_combo|
     position_1 = win_combo[0]
     position_2 = win_combo[1]
-    puts position_1, position_2
+    puts position_1 + position_2
   end
 end
 
