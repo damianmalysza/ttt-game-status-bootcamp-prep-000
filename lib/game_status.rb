@@ -23,7 +23,7 @@ def won?(board)
     if board[position_1] == "X" && board[position_2] == "X" && board[position_3] == "X"
       return win_combo
     elsif board[position_1] == "O" && board[position_2] == "O" && board[position_3] == "O"
-      win_combo
+      return win_combo
       break
     else
       false
