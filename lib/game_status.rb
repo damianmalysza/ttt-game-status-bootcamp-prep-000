@@ -27,6 +27,6 @@ def won?(board)
   end
 end
 
-#board=["O","O","O"," "," "," "," "," "," "]
+board=["O","X","O"," "," "," "," "," "," "]
 
-#won?(board)
+won?(board)
