@@ -21,7 +21,7 @@ def won?(board)
     position_2 = win_combo[1]
     position_3 = win_combo[2]
     if board[position_1] == "X"
-      return win_combo
+      puts win_combo
     end
   end
 end
