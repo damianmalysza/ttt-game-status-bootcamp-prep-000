@@ -22,6 +22,8 @@ def won?(board)
     position_3 = win_combo[2]
     if (board[position_1] == "X" || board[position_1] == "O") && (board[position_2] == "X" || board[position_2] == "O") && (board[position_3] == "X" || board[position_1] == "O")
       return win_combo
+    else
+      false
     end
   end
 end
